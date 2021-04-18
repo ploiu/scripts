@@ -25,4 +25,6 @@ while(!(Test-Path -PathType Container -Path "$targetDir")) {
         Set-Location ..;
     }
 }
+# store the original dir for use with back.ps1
+$global:prevDir = $origDir;
 Set-Location $targetDir
