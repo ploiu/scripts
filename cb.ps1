@@ -1,1 +1,1 @@
-return git branch --show-curent
+return $(git branch --show-current)
